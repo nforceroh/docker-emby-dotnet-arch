@@ -7,7 +7,7 @@ ARG EMBY_URL="https://github.com/MediaBrowser/Emby.Releases/releases/download/3.
 RUN \
  echo "Fetching .Net Core" \
  && pacman --noconfirm -Syu \
- && pacman --noconfirm -Sy unzip skia-sharp ffmpeg imagemagick libmagick sqlite libglvnd \
+ && pacman --noconfirm -Sy unzip skia-sharp60 ffmpeg imagemagick libmagick sqlite libglvnd \
  && curl -L -s ${EMBY_URL} -o /tmp/emby.zip \
  && unzip /tmp/emby.zip -d /app \
  && cd /app/system \
