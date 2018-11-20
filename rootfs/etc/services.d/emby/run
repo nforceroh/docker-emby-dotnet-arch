@@ -2,4 +2,5 @@
 
 echo "Starting emby"
 
+export LD_LIBRARY_PATH='/usr/lib'
 exec s6-setuidgid abc /usr/bin/dotnet /app/system/EmbyServer.dll -programdata /config
