@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+echo "Starting emby"
+
+exec s6-setuidgid abc /usr/bin/dotnet /app/system/EmbyServer.dll -programdata /config
