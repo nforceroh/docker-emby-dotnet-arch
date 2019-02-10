@@ -11,7 +11,7 @@ RUN \
 # && curl -L -s ${EMBY_URL} -o /tmp/emby.zip \
 # && unzip /tmp/emby.zip -d /app \
 # && cd /app/system \
-  && ln -s /usr/lib/emby-server /app/system
+  && ln -s /usr/lib/emby-server /app/system \
 # && ln -s /usr/lib/libSkiaSharp.so.60.0.0 libSkiaSharp.so \
 # && rm -f /tmp/emby.zip \
  && rm -rf /usr/share/man/* /var/cache/pacman/pkg/* /var/lib/pacman/sync/* /etc/pacman.d/mirrorlist.pacnew
