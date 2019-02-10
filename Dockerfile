@@ -5,7 +5,7 @@ MAINTAINER Sylvain Martin (sylvain@nforcer.com)
 #ARG EMBY_URL="https://github.com/MediaBrowser/Emby.Releases/releases/download/4.1.0.8/embyserver-netcore_4.1.0.8.zip"
 
 RUN \
- echo "Installing Emby and dependancies"
+ echo "Installing Emby and dependancies" \
  && pacman --noconfirm -Syu \
  && pacman --noconfirm -Sy unzip skia-sharp60 ffmpeg imagemagick libmagick sqlite libglvnd emby-server \
 # && curl -L -s ${EMBY_URL} -o /tmp/emby.zip \
