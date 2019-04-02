@@ -2,7 +2,7 @@ FROM nforceroh/docker-dotnetcore-arch:latest
 
 MAINTAINER Sylvain Martin (sylvain@nforcer.com)
 
-#ARG EMBY_URL="https://github.com/MediaBrowser/Emby.Releases/releases/download/4.1.0.8/embyserver-netcore_4.1.0.8.zip"
+#ARG EMBY_URL="https://github.com/MediaBrowser/Emby.Releases/releases/download/4.1.0.8/embyserver-netcore_4.1.0.18.zip"
 
 RUN \
  echo "Installing Emby and dependancies" \
