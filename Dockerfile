@@ -1,4 +1,4 @@
-FROM nforceroh/docker-dotnetcore-arch:latest
+FROM nforceroh/docker-arch-base:latest
 
 MAINTAINER Sylvain Martin (sylvain@nforcer.com)
 
